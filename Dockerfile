@@ -24,6 +24,6 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 
 COPY . /app/
 EXPOSE 8000
-RUN chmod +x entrypoints.sh
+RUN chmod -R 0700 /entrypoints.sh
 
 ENTRYPOINT [ "./entrypoints.sh" ]
