@@ -37,7 +37,7 @@ python manage.py migrate
 
 Esto iniciará los contenedores de Docker para su microservicio y la base de datos especificados en el archivo `docker-compose.yml`.
 
-Una vez que los contenedores estén en ejecución, puede acceder a su aplicación Django en el siguiente puerto: [http://localhost:8001](http://localhost:8001).
+Una vez que los contenedores estén en ejecución, puede acceder a su aplicación Django en el siguiente puerto: [http://localhost:8000](http://localhost:8000).
 
 
 La base de datos es MySQL, puede acceder a ella utilizando las siguientes credenciales:

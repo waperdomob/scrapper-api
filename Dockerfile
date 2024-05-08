@@ -23,7 +23,7 @@ RUN apt-get update && apt-get install -y pkg-config
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
 COPY . /app/
-
+EXPOSE 8000
 RUN chmod +x entrypoints.sh
 
 ENTRYPOINT [ "./entrypoints.sh" ]
