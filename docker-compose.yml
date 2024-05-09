@@ -5,6 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    command: sh -c "python manage.py runserver 0.0.0.0:8000"
     ports:
       - "8000:8000"
     depends_on:
@@ -31,7 +32,6 @@ services:
     image: selenium/standalone-chrome
     ports:
       - "4444:4444"
-
 
 volumes:
   mysql_data:

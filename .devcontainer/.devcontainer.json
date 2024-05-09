@@ -1,0 +1,12 @@
+{
+    "name": "Django Project",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "scraper_api",
+    "workspaceFolder": "/app",
+    "extensions": [
+      "PKief.material-icon-theme",
+      "ms-python.vscode-pylance",
+      "ms-python.python"
+  ],
+  }
+  

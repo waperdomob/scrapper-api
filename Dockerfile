@@ -12,8 +12,6 @@ RUN apt-get update \
 
 COPY requirements.txt /app/
 
-COPY entrypoints.sh /app/
-
 RUN python -m venv /opt/venv
 
 RUN apt-get update && apt-get install -y default-libmysqlclient-dev libssl-dev && apt install -y default-mysql-client
@@ -24,6 +22,3 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 
 COPY . /app/
 EXPOSE 8000
-RUN chmod -R 0700 entrypoints.sh
-
-ENTRYPOINT [ "./entrypoints.sh" ]
